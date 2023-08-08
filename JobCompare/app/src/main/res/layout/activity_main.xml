@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ui.MainActivity"
+    android:paddingTop="100dp">
+
+    <TextView
+        android:id="@+id/mm_title"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Job Compare"
+        android:gravity="center"
+        android:textSize="20sp"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:paddingLeft="10dp"
+        android:paddingRight="10dp"
+        android:layout_marginTop="100dp"
+        >
+        <Button
+            android:id="@+id/mm_btncurrentjob"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:layout_marginTop="20dp"
+            android:gravity="center"
+            android:text="Enter/edit current job"
+            android:textSize="18dp"
+            android:textColor="#000000"
+            android:onClick="handleClick"
+            />
+        <Button
+            android:id="@+id/mm_btnjoboffer"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:layout_marginTop="20dp"
+            android:gravity="center"
+            android:text="Enter job offer"
+            android:textSize="18dp"
+            android:textColor="#000000"
+            android:onClick="handleClick"
+            />
+
+        <Button
+            android:id="@+id/buttonComparisonSetting"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:layout_marginTop="20dp"
+            android:gravity="center"
+            android:onClick="handleClick"
+            android:text="Adjust comparison setting"
+            android:textColor="#000000"
+            android:textSize="18dp" />
+
+        <Button
+            android:id="@+id/mm_btncomparejob"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:layout_marginTop="20dp"
+            android:gravity="center"
+            android:text="Compare job offers"
+            android:textSize="18dp"
+            android:textColor="#000000"
+            android:onClick="handleClick"
+            />
+    </LinearLayout>
+</RelativeLayout>
